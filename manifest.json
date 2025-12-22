@@ -1,0 +1,10 @@
+{
+  "repo": "disaster_api",
+  "files": [
+    "app/main.py",
+    "requirements.txt",
+    "Dockerfile",
+    ".dockerignore",
+    "README_DEPLOY.md"
+  ]
+}
