@@ -1,7 +1,7 @@
 # Disaster Tweet Classifier & API
 
-[![CI](https://github.com/sakibalfahim/disaster-tweets-api/actions/workflows/ci.yml/badge.svg)](https://github.com/sakibalfahim/disaster-tweets-api/actions)
-[Model (HF)](https://huggingface.co/sakibalfahim/disaster-tweets-bert) · [Demo (Space)](https://huggingface.co/spaces/sakibalfahim/disaster-tweets-demo)
+[![CI](https://github.com/sakibalfahim/disaster-tweets-api/actions/workflows/ci.yml/badge.svg)](https://github.com/sakibalfahim/CrisisPulse/actions)
+[Model (HF)](https://huggingface.co/sakibalfahim/CrisisPulse) · [Demo (Space)](https://huggingface.co/spaces/sakibalfahim/CrisisPulse)
 
 ## One-line
 BERT-based binary classifier (Disaster vs Not Disaster) with a production-ready FastAPI service, Docker image, CI, and deployment notes.
