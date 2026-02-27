@@ -1,10 +1,10 @@
-# CrisisPulse - FastAPI • Transformers • Docker • CI • Cloud Run • GHCR
+# CrisisPulse — FastAPI • Transformers • Docker • CI • Deployment • Cloud Run • GHCR
 
 [![CI](https://github.com/sakibalfahim/CrisisPulse/actions/workflows/ci.yml/badge.svg)](https://github.com/sakibalfahim/CrisisPulse/actions)
 [Model (HF)](https://huggingface.co/sakibalfahim/CrisisPulse) · [Demo (Space)](https://huggingface.co/spaces/sakibalfahim/CrisisPulse)
 
-## One-line
-BERT-based binary classifier (Disaster vs Not Disaster) with a production-ready FastAPI service, Docker image, CI, and deployment notes.
+## Quick description
+CrisisPulse is a BERT-based lightweight disaster-intent classifier optimized for short-form social media text. Designed for fast inference, containerized deployment, and reproducible research.
 
 ---
 
