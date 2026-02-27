@@ -1,6 +1,6 @@
 # Disaster Tweet Classifier & API
 
-[![CI](https://github.com/sakibalfahim/disaster-tweets-api/actions/workflows/ci.yml/badge.svg)](https://github.com/sakibalfahim/crisispulse/actions)
+[![CI](https://github.com/sakibalfahim/CrisisPulse/actions/workflows/ci.yml/badge.svg)](https://github.com/sakibalfahim/CrisisPulse/actions)
 [Model (HF)](https://huggingface.co/sakibalfahim/CrisisPulse) · [Demo (Space)](https://huggingface.co/spaces/sakibalfahim/CrisisPulse)
 
 ## One-line
