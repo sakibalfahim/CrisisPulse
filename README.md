@@ -1,4 +1,4 @@
-# Disaster Tweet Classifier & API
+# Disaster Tweet Classifier & API - FastAPI • Transformers • Docker • CI • Cloud Run • GHCR
 
 [![CI](https://github.com/sakibalfahim/CrisisPulse/actions/workflows/ci.yml/badge.svg)](https://github.com/sakibalfahim/CrisisPulse/actions)
 [Model (HF)](https://huggingface.co/sakibalfahim/CrisisPulse) · [Demo (Space)](https://huggingface.co/spaces/sakibalfahim/CrisisPulse)
@@ -25,11 +25,11 @@ BERT-based binary classifier (Disaster vs Not Disaster) with a production-ready 
 Build and run locally to verify the API:
 ```bash
 # build
-docker build -t disaster-tweets-api:local .
+docker build -t crisispulse-api:local .
 
 # run (replace HF_TOKEN)
 docker run --rm -p 8080:8080 \
-  -e HF_TOKEN="hf_xxx" -e HF_REPO_ID="sakibalfahim/disaster-tweets-bert" \
+  -e HF_TOKEN="hf_xxx" -e HF_REPO_ID="sakibalfahim/CrisisPulse" \
   disaster-tweets-api:local
 
 # test
@@ -49,7 +49,7 @@ gcloud auth login
 gcloud config set project PROJECT_ID
 
 # Build container in GCP
-gcloud builds submit --tag gcr.io/PROJECT_ID/disaster-tweets-api:latest
+gcloud builds submit --tag gcr.io/PROJECT_ID/crisispulse-api:latest
 
 # Deploy (recommended sizing)
 gcloud run deploy disaster-tweets-api \
@@ -57,7 +57,7 @@ gcloud run deploy disaster-tweets-api \
   --platform=managed \
   --region=REGION \
   --allow-unauthenticated \
-  --set-env-vars HF_REPO_ID="sakibalfahim/disaster-tweets-bert" \
+  --set-env-vars HF_REPO_ID="sakibalfahim/CrisisPulse" \
   --memory=4Gi --cpu=2 --concurrency=1
 ```
 **Secrets:** store `HF_TOKEN` as a Cloud Run secret and mount it into the service; do not put the token directly in CLI history.
@@ -107,7 +107,7 @@ Response:
 
 ## Environment variables & secrets
 - `HF_TOKEN` — Hugging Face token (READ permission). **Store as secret**.
-- `HF_REPO_ID` — model repo id, default `sakibalfahim/disaster-tweets-bert`.
+- `HF_REPO_ID` — model repo id, default `sakibalfahim/CrisisPulse`.
 
 Do not commit tokens. Use cloud secret managers or GitHub Secrets for CI.
 
