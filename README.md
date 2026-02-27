@@ -1,4 +1,4 @@
-# Disaster Tweet Classifier & API - FastAPI • Transformers • Docker • CI • Cloud Run • GHCR
+# CrisisPulse - FastAPI • Transformers • Docker • CI • Cloud Run • GHCR
 
 [![CI](https://github.com/sakibalfahim/CrisisPulse/actions/workflows/ci.yml/badge.svg)](https://github.com/sakibalfahim/CrisisPulse/actions)
 [Model (HF)](https://huggingface.co/sakibalfahim/CrisisPulse) · [Demo (Space)](https://huggingface.co/spaces/sakibalfahim/CrisisPulse)
